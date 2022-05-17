@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Refilwe Zobane">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <div id="slider">
+            <div class="slide left">
+                <div class="top-bar"></div>
+                <div class="imgContainer"><img src="images/louis-colbee-B3wG77sDGnw-unsplash.jpg"></div>
+            </div>
+            <div class="slide center">
+                <div class="top-bar"></div>
+                <div class="imgContainer"><img src="images/amr-taha-MmHxjw38D14-unsplash.jpg"></div>
+            </div>
+            <div class="slide right">
+                <div class="top-bar"></div>
+                <div class="imgContainer"><img src="images/kym-mackinnon-TUPrem65sUE-unsplash.jpg"></div>
+            </div>
+            <div class="slide hidden">
+                <div class="top-bar"></div>
+                <div class="imgContainer"><img src="images/m-c-dang-khoa-TRJAmPAp6e8-unsplash.jpg"></div>
+            </div> 
+            <div class="slide hidden">
+                <div class="top-bar"></div>
+                <div class="imgContainer"><img src="images/shannia-christanty-C2P2RtOjh9E-unsplash.jpg"></div>
+            </div>
+            <div class="carousel__nav">
+                <span class="carousel__button carousel__button--selected" onclick="slider.bottomNav(0);"></span>
+                <span class="carousel__button" onclick="slider.bottomNav(1);"></span>
+                <span class="carousel__button" onclick="slider.bottomNav(2);"></span>
+                <span class="carousel__button" onclick="slider.bottomNav(3);"></span>
+                <span class="carousel__button" onclick="slider.bottomNav(4);"></span>
+            </div>
+            <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/controls.js"></script>
+</html>
