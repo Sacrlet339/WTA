@@ -7,34 +7,36 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="slider">
             <div class="slide left">
-                <div class="top-bar"></div>
+                <div class="top-bar"><p>One</p></div>
                 <div class="imgContainer"><img src="images/louis-colbee-B3wG77sDGnw-unsplash.jpg"></div>
             </div>
             <div class="slide center">
-                <div class="top-bar"></div>
+                <div class="top-bar"><p>Two</p></div>
                 <div class="imgContainer"><img src="images/amr-taha-MmHxjw38D14-unsplash.jpg"></div>
             </div>
             <div class="slide right">
-                <div class="top-bar"></div>
+                <div class="top-bar"><p>Three</p></div>
                 <div class="imgContainer"><img src="images/kym-mackinnon-TUPrem65sUE-unsplash.jpg"></div>
             </div>
             <div class="slide hidden">
-                <div class="top-bar"></div>
+                <div class="top-bar"><p>Four</p></div>
                 <div class="imgContainer"><img src="images/m-c-dang-khoa-TRJAmPAp6e8-unsplash.jpg"></div>
             </div> 
             <div class="slide hidden">
-                <div class="top-bar"></div>
+                <div class="top-bar"><p>Five</p></div>
                 <div class="imgContainer"><img src="images/shannia-christanty-C2P2RtOjh9E-unsplash.jpg"></div>
             </div>
             <div class="carousel__nav">
                 <span class="carousel__button carousel__button--selected" onclick="slider.bottomNav(0);"></span>
-                <span class="carousel__button" onclick="slider.bottomNav(1);"></span>
-                <span class="carousel__button" onclick="slider.bottomNav(2);"></span>
+                <span class="carousel__button carousel__button--selected" onclick="slider.bottomNav(1);"></span>
+                <span class="carousel__button carousel__button--selected" onclick="slider.bottomNav(2);"></span>
                 <span class="carousel__button" onclick="slider.bottomNav(3);"></span>
                 <span class="carousel__button" onclick="slider.bottomNav(4);"></span>
             </div>

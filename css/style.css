@@ -11,7 +11,6 @@ body{
     justify-content: center;
     background-color: whitesmoke;
     align-self: center;
-    /* border: 1px solid; */
 }
 
 #slider{
@@ -32,30 +31,22 @@ body{
     align-content: center;
     animation-name: fadeleft;
     animation-duration: 2s;
+    position: relative;
 }
 .slide.center{
   width: 33.33%;
-    /* box-shadow: 5px 0px 10px #888888; */
     order: 2;
     animation-name: fadein;
     animation-duration: 600ms;
 }
 .slide.right{
   width: 33.33% ;
-    /*height: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 12px; */
     order: 3;
     animation-name: fadein;
     animation-duration: 600ms;
 }
 .slide.left{
      width: 33.33%;
-    /*height: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 12px; */
     order: 1;
     animation-name: fadein;
     animation-duration: 600ms;
@@ -75,10 +66,26 @@ body{
   to  {Width:0;}
 } 
 .top-bar{
-  height:5px;
-  width: 0;
-  background-color: #080808;
-  margin-left: 100%;
+  height:100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-left: 0;
+  position: absolute;
+  top: 0;
+  color: #FFF;
+  font-size: 20px;
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.top-bar > p{
+    position: absolute;
+    bottom: 13%;
+}
+.slide.hidden > .top-bar{
+  display: none;
 }
 .imgContainer{
     height: 100%;
@@ -86,52 +93,20 @@ body{
     
 }
 @keyframes fillin {
-  from  {Width:0;margin-left: 100%;}
-  to  {width: 100%;margin-left: 0;}
+  from  {Width:100%;margin-left: 0;color:#FFF;
+    font-size: 20px;}
+  to  {width: 0;margin-left: 0%;color: transparent;
+    font-size: 0px;}
   
 }
 .slide:hover > .top-bar{
-  width: 100%;margin-left: 0;
+  width: 0;
+  margin-left: 0%;
   animation-name: fillin;
   animation-duration: 600ms;
+  color: transparent;
+  font-size: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .imgContainer > img{
     width:100%;
@@ -162,14 +137,12 @@ body{
   --myColor1: transparent;
   --myColor2: Black;
   background: linear-gradient(180deg, var(--myColor1) 0%, var(--myColor2) 100%);
-  /* background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); */
 }
 .carousel__button{
     width: 25px;
     height: 5px;
     display: inline-block;
     background-color: rgb(255, 255, 255, 0.2);
-    /* border-radius: 50%; */
     margin: 0 7px;
     cursor: pointer;
 }
@@ -222,7 +195,6 @@ button#prev:hover {
     }
     .slide.left{
         width: 75% ;
-        /* box-shadow: 5px 0px 7px #888888; */
         order: 1;
         animation-name: centerside;
         animation-duration: 600ms;
