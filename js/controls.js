@@ -27,7 +27,7 @@ class Slider {
             this.nav[this.nbrClick % this.nbr].classList = "carousel__button carousel__button--selected";
             this.nav[(this.nbrClick + 1) % this.nbr].classList = "carousel__button carousel__button--selected";
 
-            if(screen.width >= 600){
+            if(screen.width >= 620){
                 this.slide[(this.nbrClick + 2) % this.nbr].classList = "slide right";
                 this.nav[(this.nbrClick + 2) % this.nbr].classList = "carousel__button carousel__button--selected";
             }
@@ -44,7 +44,7 @@ class Slider {
           if((this.nbrClick) < 0){
             this.nbrClick = this.nbr;
           }
-            this.slide[(this.nbrClick) % this.nbr].classList = "slide left";
+           this.slide[(this.nbrClick) % this.nbr].classList = "slide left";
            this.nav[(this.nbrClick) % this.nbr].classList = "carousel__button carousel__button--selected";
           
 
@@ -56,9 +56,10 @@ class Slider {
             this.slide[(this.nbrClick - 1) % this.nbr].classList = "slide center";
             this.nav[(this.nbrClick - 1) % this.nbr].classList = "carousel__button carousel__button--selected";
           }
+          
 
 
-          if(screen.width >= 600){
+          if(screen.width >= 620){
             if((this.nbrClick - 2) < 0){
               this.slide[this.nbr -1].classList = "slide right";
               this.nav[this.nbr-1].classList = "carousel__button carousel__button--selected";
@@ -94,7 +95,7 @@ class Slider {
           this.nav[(this.nbrClick + 1) % this.nbr].classList = "carousel__button carousel__button--selected";
       }
 
-      if(screen.width >= 600){
+      if(screen.width >= 620){
         if ((this.nbrClick+2) > this.nbr) {
           this.nbrClick = 1;
           this.slide[(this.nbrClick) % this.nbr].classList = "slide right";
@@ -119,7 +120,7 @@ class Slider {
       this.nav[this.nbrClick % this.nbr].classList = "carousel__button carousel__button--selected";
       this.nav[(this.nbrClick + 1) % this.nbr].classList = "carousel__button carousel__button--selected";
 
-      if(screen.width >= 600){
+      if(screen.width >= 620){
           this.slide[(this.nbrClick + 2) % this.nbr].classList = "slide right";
           this.nav[(this.nbrClick + 2) % this.nbr].classList = "carousel__button carousel__button--selected";
       }
