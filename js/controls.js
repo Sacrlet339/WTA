@@ -6,6 +6,7 @@ class Slider {
     this.prev = document.getElementById("prev");
     this.nbr = this.slide.length;
     this.nbrClick = 0;
+    console.log(this.nbrClick % this.nbr,(this.nbrClick + 1) % this.nbr,(this.nbrClick + 2) % this.nbr);
   }
 
   click() {
@@ -21,14 +22,14 @@ class Slider {
             this.nav[i].classList = "carousel__button";
       }
 
-          this.slide[this.nbrClick % this.nbr].classList = "slide left";
-          this.slide[(this.nbrClick + 1) % this.nbr].classList = "slide center";
+          this.slide[this.nbrClick % this.nbr].classList = "slide left animate__slideOutLeft";
+          this.slide[(this.nbrClick + 1) % this.nbr].classList = "slide center animate__slideOutLeft";
           //nav
           this.nav[this.nbrClick % this.nbr].classList = "carousel__button carousel__button--selected";
           this.nav[(this.nbrClick + 1) % this.nbr].classList = "carousel__button carousel__button--selected";
 
           if(screen.width >= 620){
-              this.slide[(this.nbrClick + 2) % this.nbr].classList = "slide right";
+              this.slide[(this.nbrClick + 2) % this.nbr].classList = "slide right animate__slideOutLeft";
               this.nav[(this.nbrClick + 2) % this.nbr].classList = "carousel__button carousel__button--selected";
           }
 
@@ -45,14 +46,14 @@ class Slider {
           this.nbrClick = this.nbr;
         }
          
-        this.slide[this.nbrClick % this.nbr].classList = "slide left";
-        this.slide[(this.nbrClick + 1) % this.nbr].classList = "slide center";
+        this.slide[this.nbrClick % this.nbr].classList = "slide left animate__slideOutLeft";
+        this.slide[(this.nbrClick + 1) % this.nbr].classList = "slide center animate__slideOutLeft";
         //nav
         this.nav[this.nbrClick % this.nbr].classList = "carousel__button carousel__button--selected";
         this.nav[(this.nbrClick + 1) % this.nbr].classList = "carousel__button carousel__button--selected";
 
         if(screen.width >= 620){
-            this.slide[(this.nbrClick + 2) % this.nbr].classList = "slide right";
+            this.slide[(this.nbrClick + 2) % this.nbr].classList = "slide right animate__slideOutLeft";
             this.nav[(this.nbrClick + 2) % this.nbr].classList = "carousel__button carousel__button--selected";
         }
         
@@ -60,7 +61,7 @@ class Slider {
 
     });
 
-
+    console.log(this.nbrClick % this.nbr,(this.nbrClick + 1) % this.nbr,(this.nbrClick + 2) % this.nbr);
   }
   bottomNav(x){
     this.nbrClick = x;
